@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Time Circle Web Guard",
+  "version": "0.1",
+  "description": "A soft time-circle guard for restricted websites.",
+
+  "permissions": ["tabs", "storage", "scripting"],
+
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "Time Circle Settings",
+    "default_popup": "popup.html"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["img/circle_cursor.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-card">
+      <div class="popup-icon">◐</div>
+      <h1>Time Circle</h1>
+
+      <label>Restricted websites</label>
+      <div id="siteTags" class="site-tags"></div>
+
+      <div class="site-input-row">
+        <input id="siteInput" type="text" />
+        <button id="addSiteBtn" type="button">Add</button>
+      </div>
+
+      <label>Fragment reminder interval</label>
+      <div class="interval-row">
+        <input id="intervalInput" type="number" min="1" max="180" />
+        <span>min</span>
+      </div>
+
+      <button id="saveBtn">Save</button>
+      <div id="statusText"></div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

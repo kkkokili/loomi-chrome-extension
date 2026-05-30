@@ -1,0 +1,216 @@
+#time-circle-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  background: rgba(18, 18, 22, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.time-circle-card {
+  width: 720px;
+  min-height: 560px;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: rgba(255, 250, 242, 0.97);
+  border: 1px solid rgba(120, 98, 72, 0.18);
+  padding: 30px 38px 28px;
+  text-align: center;
+  color: #5e554b;
+  box-shadow: 0 22px 80px rgba(30, 24, 18, 0.24);
+}
+
+.time-circle-icon {
+  color: #d2b78b;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.time-circle-time {
+  margin-top: 10px;
+  color: #2d2a26;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.time-circle-title {
+  margin-top: 20px;
+  color: #a79b8d;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.time-circle-goal {
+  margin-top: 8px;
+  color: #5e554b;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.time-circle-url {
+  margin: 18px auto 0;
+  max-width: 560px;
+  color: #8a7c6e;
+  font-size: 13px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.time-circle-prompt {
+  margin-top: 42px;
+  color: #7d7165;
+  font-size: 15px;
+}
+
+.time-circle-buttons {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.time-circle-buttons button {
+  border: 1px solid rgba(120, 98, 72, 0.28);
+  border-radius: 17px;
+  background: rgba(255, 250, 242, 0.7);
+  color: #7a6e62;
+  font-size: 13px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.time-circle-buttons button.selected {
+  background: rgba(216, 195, 165, 0.85);
+  color: #4f463d;
+  border: 1px solid rgba(120, 98, 72, 0.55);
+}
+
+.time-circle-buttons button:hover {
+  background: rgba(216, 195, 165, 0.75);
+  color: #4f463d;
+}
+
+.time-circle-canvas-placeholder {
+  margin: 30px auto 0;
+  width: 420px;
+  height: 180px;
+  border-radius: 28px;
+  border: 1px dashed rgba(120, 98, 72, 0.35);
+  background: rgba(255, 252, 246, 0.76);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(110, 98, 86, 0.7);
+}
+
+.time-circle-message {
+  margin: 28px auto 0;
+  max-width: 560px;
+  color: #6b6257;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.deviation-card {
+  min-height: 440px;
+}
+
+#time-circle-fragment {
+  position: fixed;
+  right: 28px;
+  bottom: 36px;
+  z-index: 2147483647;
+  width: 120px;
+  height: 120px;
+  border-radius: 34px;
+  background: rgba(255, 250, 242, 0.82);
+  border: 1px solid rgba(120, 98, 72, 0.18);
+  box-shadow: 0 12px 40px rgba(30, 24, 18, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #5e554b;
+}
+
+.fragment-circle {
+  font-size: 28px;
+  color: #d2b78b;
+}
+
+.fragment-text {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+#time-circle-canvas {
+  margin: 24px auto 0;
+  display: block;
+  width: 420px;
+  height: 260px;
+  cursor: crosshair;
+}
+
+/* ---------------加 */
+#time-circle-canvas {
+  margin: 24px auto 0;
+  display: block;
+  width: 420px;
+  height: 260px;
+  cursor: auto;
+}
+
+.time-circle-buttons button.selected {
+  background: rgba(216, 195, 165, 0.85);
+  color: #4f463d;
+  border: 1px solid rgba(120, 98, 72, 0.55);
+}
+
+#time-circle-fragment {
+  position: fixed;
+  right: 28px;
+  bottom: 36px;
+  z-index: 2147483647;
+  width: 150px;
+  height: 150px;
+  border-radius: 34px;
+  background: rgba(255, 250, 242, 0.72);
+  border: 1px solid rgba(120, 98, 72, 0.18);
+  box-shadow: 0 12px 40px rgba(30, 24, 18, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  user-select: none;
+}
+
+#time-circle-fragment:active {
+  cursor: grabbing;
+}
+
+#time-circle-fragment-canvas {
+  width: 120px;
+  height: 90px;
+  display: block;
+  pointer-events: none;
+}
+
+#time-circle-fragment-duration {
+  margin-top: 2px;
+  color: rgba(104, 92, 80, 0.9);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+
+#time-circle-fragment.fragment-blink {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 0 0 2px rgba(210, 183, 139, 0.35),
+    0 12px 40px rgba(30, 24, 18, 0.18);
+}

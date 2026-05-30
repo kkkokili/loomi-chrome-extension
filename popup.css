@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  width: 320px;
+  background: #fffaf2;
+  font-family: "Segoe UI", sans-serif;
+  color: #5e554b;
+}
+
+.popup-card {
+  padding: 20px;
+}
+
+.popup-icon {
+  text-align: center;
+  color: #d2b78b;
+  font-size: 26px;
+}
+
+h1 {
+  margin: 6px 0 18px;
+  text-align: center;
+  font-size: 20px;
+  color: #2d2a26;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #7d7165;
+}
+
+textarea,
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfd1bd;
+  border-radius: 10px;
+  background: #fffdf8;
+  color: #5e554b;
+  font-size: 14px;
+  padding: 9px;
+  outline: none;
+}
+
+textarea {
+  height: 92px;
+  resize: none;
+}
+
+.interval-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.interval-row input {
+  flex: 1;
+}
+
+.interval-row span {
+  color: #8a7c6e;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  border: none;
+  border-radius: 12px;
+  background: #dcc7a7;
+  color: #4f463d;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d2b98f;
+}
+
+#statusText {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #8a7c6e;
+}
+
+.site-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.site-tag {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 1px 13px 1px 14px;
+
+  border-radius: 11px;
+
+  background: rgba(220, 210, 194, 0.34);
+
+  border: 1px solid rgba(160, 136, 108, 0.1);
+
+  color: #5f564d;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  backdrop-filter: blur(8px);
+}
+
+.site-tag button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: rgba(160, 136, 108, 0.1);
+
+  color: rgba(95, 86, 77, 0.72);
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  padding: 0;
+  padding-bottom: 1px;
+
+  line-height: 1;
+  transition: 0.18s;
+  transform: translateY(-7px);
+}
+
+.site-tag button:hover {
+  background: rgba(160, 136, 108, 0.18);
+}
+
+.site-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.site-input-row input {
+  flex: 1;
+}
+
+.site-input-row button {
+  width: 64px;
+  margin-top: 0;
+}
+
+.site-input-row input {
+  flex: 1;
+  background: rgba(255, 253, 248, 0.72);
+}
